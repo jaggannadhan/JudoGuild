@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SignIn-Judo Guild</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <style type="text/css">
+    	#signin{
+    		position: absolute;
+    		top: 10px;
+    		right: 20px;
+    		width: 400px;
+    		height: 340px;
+    		background: black;
+    		opacity: .6;
+    		padding: 10px 20px 40px 20px;
+    		overflow: hidden;
+    	}
+    	#signin:hover{
+    		opacity: 1.5;
+    		height: 500px;
+    		transition-duration: 1.5s;
+    		transform-style: ease-out;
+    	}
+
+    	.container-fluid{
+    		background-color: black;
+    		opacity: 0.9;
+    	}
+
+		.signupnav {
+		    height: 100%;
+		    width: 0;
+		    position: fixed;
+		    z-index: 1000;
+		    top: 0;
+		    left: 0;
+		    background-color: #111;
+		    overflow-x: hidden;
+		    transition: 0.5s;
+		    padding-top: 60px;
+		    text-align:center;
+		}
+
+		.signupnav a {
+		    padding: 8px 8px 8px 32px;
+		    text-decoration: none;
+		}
+		.signupnav .closebtn {
+		    position: absolute;
+		    top: 0;
+		    right: 25px;
+		    font-size: 36px;
+		    margin-left: 50px;
+		}
+
+		@media screen and (max-height: 450px) {
+		  .signupnav {padding-top: 15px;}
+		}
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION BAR-->	
+	<header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark-reverse">
+        <a class="navbar-brand" href="Sign-in.html"><img src="images/siteLogo.png" width ="160" height="60" style="margin-left: 50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </header>
+<!-- NAVIGATION BAR ENDS-->
+
+<!-- SLIDE SHOW PANE-->
+<main role="main">
+  <div id= "slideshow">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">        	
+          <div class="carousel-item active">
+            <img class="first-slide" src="images/Pane1.jpg" width=100% height ="700" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>What we Do</h1>
+                <p>The main Objective of Judo Community is to bring Judo ka's from all over the world together by providing an interactive platform to rejoice in the world of JUDO. Here you can-Connect with different People, Add your Status, Pics and Videos, Post, Like, Share, Comment and much more.</p>
+                <p><button class="btn btn-lg btn-primary" onclick="openNav()">Sign Up</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="images/Pane2.jpg" width=100% height ="700" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>What Else</h1>
+                <p>Collection of all Judo Techniques across different YouTube Channels under one Url. Stop wasting your time searching for the right video. We provide apt resources for accuring the perfect training and knowledge. Watch over and over until surpass your self. View all official videos & learn techniques here.</p>
+                <p><button class="btn btn-lg btn-primary" onclick="openNav()">Sign Up</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="images/Pane3.jpg" width=100% height ="700" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Judo Archives</h1>
+                <p>View / Upload 1000's of Community pictures. Simple way to capture and share the world's moments. Follow different Communities to see what they're up to, and discover friends from all over the world that are sharing things you love. </p>
+                <p><button class="btn btn-lg btn-primary" onclick="openNav()">Sign Up</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+  </div>
+   <!-- SLIDE SHOW PANE ENDS-->
+   
+   <!-- SIGN IN SECTION-->
+    <div id= "signin">
+    	<form id="SigninForm" class="form-signin" method="post" action="Home.php" style="color: white;">
+    		<div class="alert SigninResultBox text-center"><h2>Please sign in</h2></div>
+	        <label for="signinEmail" class="sr-only">Email address</label>
+	        <input type="email" id="signinEmail" class="form-control"  name="email" placeholder="Email address" required autofocus><br>
+	        <label for="signinPassword" class="sr-only">Password</label>
+	        <input type="password" id="signinPassword" class="form-control" placeholder="Password" name="pass" required><br>
+	        <div class="checkbox">
+	          <label>
+	            <input id="signinRemember" type="checkbox" value="remember-me" name="check" > Remember me
+	          </label>
+	        </div>
+	        <button id="SigninSubmit" class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button><br><br>	        
+	    </form>
+	    <div style="color: white;">
+		    <h3>New to Community!</h3>
+	        <h5>Tap to Sign Up!</h5>
+	        <button class="btn btn-default" style="width: 30%; margin-left: 35%;" onclick="openNav()">Sign Up</button>
+        </div>
+	</div> <!-- /container -->
+<!-- SIGN IN SECTION ENDS-->
+
+<!-- SIGN UP SECTION-->
+	<div id="mySignUpnav" class="signupnav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<h2 class="form-signin-heading" style="color: white;">Get Started with Judo Community!</h2>		
+		<form id="RegisterForm" class="form-signin container" action="Register.php" method="POST" style="color: white; width: 30%;">
+			<div class="alert SignupResultBox text-center"></div>        
+	        <label for="inputName" class="sr-only">Name</label>
+	        <input type="text" id="inputName" class="form-control" placeholder="Name" name="name" required autofocus><br>
+	        <label for="inputDOB" class="sr-only">DOB</label>
+	        <input type="text" id="inputDOB" class="form-control" placeholder="DOB: yyyy-mm-dd" name="dob" required autofocus><br>
+	        <label for="inputEmail" class="sr-only">Email address</label>
+	        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required autofocus><br>
+	        <label for="inputPassword" class="sr-only">Password</label>
+	        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="pass" required><br>
+	        <label for="ConfirmPassword" class="sr-only">Confirm Password</label>
+	        <input type="password" id="ConfirmPassword" class="form-control" placeholder="Confirm Password" name="confirmpass" required><br>
+	        <select id="inputGender" name="gender">
+	        	<option value="male">Male</option>
+	        	<option value="female">Female</option>
+	        </select><hr>
+	        <button id="SignupSubmit" class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign Up</button><br>				          
+		</form>			  
+	</div>
+
+<!-- SIGN UP SECTION ENDS-->
+
+
+<!-- FOOTER -->
+    <footer class="container-fluid"><br>
+    	<div class="row" style="padding-left: 200px;">
+	    	<div class="col-md-4 col-md-offset-1">
+	    	    <h5 style="color: white;">About Judo Community</h5>
+	        	<p class="text-justify" style="color: grey;">The Judo Community provides a platfrom for the all Judo Players and aspirants accross the world, come together, share, learn and grow. It provides a Video portico to learn Techniques and also to share innovative ideas.
+	        	</p>
+	        </div>
+	        <div class="col-md-2" style="padding-left: 40px;">
+	        	<h5 style="color: white;">Links</h5>
+	        	<a href="https://www.facebook.com/judojagan">Creators</a><br>
+		        <a href="https://plus.google.com/+JegsiRoxVeraLevelDeveloper">Advertise</a><br>
+		        <a href="https://plus.google.com/+JegsiRoxVeraLevelDeveloper">Developers</a><br>
+		    </div>
+		    <div class="col-md-4">
+		        <a href="https://www.facebook.com/buddhajudohome/" dir="ltr">Buddha JudoKa's&trade;</a><p style="color: white;">&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p><br>
+	      	</div>
+      	</div>
+      	<p style="color: white; padding-left: 12%">Designed with passion and respect towards the power of Communcation and Humanity with the help of our contribuitors.</p><br>
+    </footer>
+<!-- FOOTER ENDS-->
+</main>
+
+	<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+	<script type="text/javascript">
+		function openNav() {
+		    document.getElementById("mySignUpnav").style.width = "100%";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySignUpnav").style.width = "0%";
+		}
+
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+        $("#RegisterForm").submit(function(event) {
+        	event.preventDefault();
+
+        	$(".SignupResultBox").load("Register.php", {
+        		name: $("#inputName").val(),
+        		dob: $("#inputDOB").val(),
+        		email: $("#inputEmail").val(),
+        		pass: $("#inputPassword").val(),
+        		confirmpass: $("#ConfirmPassword").val(),
+        		gender: $("#inputGender").val(),
+        		submit: $("#SignupSubmit").val()
+
+        	});
+
+        });
+	});
+	</script>
+
+</body>
+</html>

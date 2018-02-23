@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home-Judo Guild</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script type="text/javascript">
+      function preventBack() {
+        window.history.forward();
+      }
+      setTimeout("preventBack()",0);
+      window.onunload = function(){null};
+    </script>
+
+    <style type="text/css">
+/*///////NAV BAR STYLES//////*/      
+      .navbar-custom{
+        background-color: black;
+        height: 60px;
+      }
+      .nav-link{
+        font-size: 1.4em;
+        color: white;
+        border-right: 1px solid white;
+        padding: 0px 20px;
+      }
+      .nav-item{
+        padding: 10px 10px;
+      }
+      .push{
+        width: 38px;
+        height: 38px;
+      }
+      .push:active{
+        width: 36px;
+        height: 36px;
+      }
+      .nav-link:hover{
+        font-weight: bold;
+        text-shadow: 0 0 10px 10px;
+      }
+/*///////NAV BAR STYLES//////*/  
+/*///////COMM - TUT STYLES//////*/  
+      .main{
+        position: absolute;
+        top: 100px;
+        left: 30px;
+      }
+
+      #Vid{
+        width: 100%;
+      }
+
+      .main1{
+        margin-top: 50px;
+        margin-left: 0px;
+        width: 300px;
+        height: 160px;
+        overflow: hidden;
+        transition-duration: 1s;
+      }
+      .main1:hover{
+        margin-top: 0px;
+        height: 470px;
+        transition-duration: 1s;
+      }
+      .text{
+        background: black;
+        color: white;
+        border-radius: 25px;
+        padding: 20px;
+      }
+/*///////COMM - TUT STYLES//////*/ 
+/*///////MARKETING STYLES//////*/ 
+      .market{
+        margin-top: 50px;
+      }
+
+    </style>
+
+</head>
+<body>
+
+<!-- NAVIGATION BAR-->	
+	<header>
+      <nav class="navbar navbar-expand-md fixed-top navbar-custom">
+        <a class="navbar-brand" href="Home.html"><img src="images/siteLogo.png" width ="160" height="60" style="margin-left: 50px; width: 120px; height: 50px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html" style="">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About-JudoCommunity.html">About</a>
+            </li>            
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">                
+                <a href=""><img class="img-responsive push" src="images/settings.png" data-toggle= "tooltip" title="Settings" data-placement= "bottom"></a> 
+            </li>
+            <li class="nav-item">
+              <a href="logout.php"><img class="img-responsive push" src="images/signout.png" data-toggle= "tooltip" title="Sign Out" data-placement= "bottom"></a> 
+            </li>
+          </ul>    
+        </div>
+        </nav>
+    </header>
+<!-- NAVIGATION BAR ENDS-->
+
+
+    <video id="Vid" autoplay="true" loop="true" muted="muted" contenteditable="not" src="https://media.istockphoto.com/videos/judo-sparring-close-up-in-slow-motion-video-id828047934">Your browser does not support Video!</video>
+    <!--CONTAINER-->
+      <div class="container main">   
+          <div class="container main1">
+              <a href="Community.php"><img class="rounded-circle" src="images/judoComm.jpg" alt="Generic placeholder image" width="140" height="140"></a><br><br>
+              <p class="text-justify text">The main Objective of Judo Community is to bring Judo ka's from all over the world together by providing an interactive platform to rejoice in the world of JUDO. Here you can-Connect with different People, Add your Status, Pics and Videos, Post, Like, Share, Comment and much more.<br></p>
+          </div>           
+          <div class="container main1" style="padding-top: 20px;">
+              <a href="Tutorial.html"><img class="rounded-circle" src="images/YouTube.jpg" alt="Generic placeholder image" width="140" height="140"></a><br><br>
+              <p class="text-justify text">Collection of all Judo Techniques across different YouTube Channels under one Url. Stop wasting your time searching for the right video. We provide apt resources for accuring the perfect training and knowledge. View all official videos & learn techniques here.<br></p>
+          </div>               
+      </div>  
+    <!--CONTAINER-->
+    
+    <br>
+    <div class="container market">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/Legends.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Legends</h2>
+            <p class="text-justify">The main Objective of Judo Community is to bring Judo ka's from all over the world together by providing an interactive platform to rejoice in the world of JUDO. Here you can-Connect with different People, Add your Status, Pics and Videos, Post, Like, Share, Comment and much more.</p>
+            <p><a class="btn btn-secondary" href="Indian-Legends.html" role="button">View Details &raquo;</a></p>
+          </div><!-- /.col-lg-4 --><div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="images/LightCapture.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Picture Archive</h2>
+            <p class="text-justify">Collection of all Judo Techniques across different YouTube Channels under one Url. Stop wasting your time searching for the right video. We provide apt resources for accuring the perfect training and knowledge. Watch over and over until surpass your self. View all official videos & learn techniques here.</p>
+            <p><a class="btn btn-secondary" href="Tutorial.html" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-9">
+            <h2 class="featurette-heading">Read the History & Lore of Judo<br><span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="text-justify" style="width: 95%;"><strong>Kanō Jigorō</strong><mark> (嘉納 治五郎, 18 October 1860 – 5 May 1938)</mark> was a Japanese educator and athlete, the founder of Judo. Judo was the first Japanese martial art to gain widespread international recognition, and the first to become an official Olympic sport. </p>
+            <h3>Judo in India</h3>
+            <p>Judo is a sport which is widely played in India. The first written record about Judo in India in Kodokan is about demonstrations and coaching of Judo by <strong>Shinzo Tagaki</strong> arranged at Shantiniketan in 1929 by <strong>Rabindranath Tagore. </strong> The Judo Federation of India was formed in 1965.</p>
+            <p><a class="btn btn-primary" href="About-Founder.html" role="button">Read More &raquo;</a></p>
+          </div>
+          <div class="col-md-3">
+            <img class="featurette-image img-fluid mx-auto" src="images/Kanō_Jigorō2.jpg" alt="Generic placeholder image" width ="200" height="280">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider"><!-- /END THE FEATURETTES -->
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container-fluid">
+        <span id="top-link-block" class="hidden, float-right" style="margin-right: 20px">
+    	<a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+    		<i class="glyphicon glyphicon-chevron-up"></i>Back to top</a>
+    	</span>
+    	<p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+
+	<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+
+	<script type="text/javascript">
+		if ( ($(window).height() + 100) < $(document).height() ) {
+		    $('#top-link-block').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        		offset: {top:100}
+    });
+}
+	</script>
+</body>
+</html>
