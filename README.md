@@ -1,2 +1,2 @@
 # JudoGuild
-Judo Guild - for Judo Kas and everyone
+Judo Guild - for Judo Kas and martial artists
